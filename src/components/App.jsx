@@ -4,7 +4,8 @@ import Profile from "./Profile";
 import friends from "../friends.json";
 import FriendList from "./FriendList";
 
-const App = () => {
+
+export default function App() {
   return (
     <>
       <Profile
@@ -14,9 +15,7 @@ const App = () => {
         image={userData.avatar}
         stats={userData.stats}
       />
-      <FriendList friends={friends} />
+      <FriendList friends={friends}/>
     </>
   );
-};
-
-export default App;
+}
